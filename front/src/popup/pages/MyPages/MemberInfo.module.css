@@ -1,0 +1,20 @@
+/* GroupContributions.module.css */
+.container {
+  margin-top: 32px;
+  overflow: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.memberBox {
+  margin-bottom: 16px;
+}
+
+.mascotExperience {
+  color: gray;
+  margin-bottom: 16px;
+}

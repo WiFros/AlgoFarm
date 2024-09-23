@@ -1,0 +1,10 @@
+/* ToggleEnableButton.module.css */
+.button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.active {
+  color: #EB4A52;
+}

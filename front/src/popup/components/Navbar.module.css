@@ -1,0 +1,64 @@
+.navbar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 2px;
+  background-color: #dadadb;
+  border-radius: 9px;
+  width: 500px; /* 폭을 500px로 설정 */
+}
+
+.indicator {
+  content: "";
+  width: 120px; /* 탭 너비에 맞춰 조정 */
+  height: 28px;
+  background: #ffffff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: 9;
+  border: 0.5px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 7px;
+  transition: all 0.2s ease-out;
+}
+
+.tab_label {
+  width: 120px; /* 폭 500px에 맞춰 탭 너비 조정 */
+  height: 28px;
+  position: relative;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  font-size: 0.75rem;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.tab_1, .tab_2, .tab_3, .tab_4 {
+  width: 120px; /* 폭 500px에 맞춰 탭 너비 조정 */
+  height: 28px;
+  position: absolute;
+  z-index: 99;
+  outline: none;
+  opacity: 0;
+}
+
+.tab_1:checked ~ .indicator {
+  left: 2px;
+}
+
+.tab_2:checked ~ .indicator {
+  left: calc(120px + 2px); /* 첫 번째 탭 너비에 맞춰 위치 조정 */
+}
+
+.tab_3:checked ~ .indicator {
+  left: calc(120px * 2 + 2px); /* 두 번째 탭 너비에 맞춰 위치 조정 */
+}
+
+.tab_4:checked ~ .indicator {
+  left: calc(120px * 3 + 2px); /* 세 번째 탭 너비에 맞춰 위치 조정 */
+}

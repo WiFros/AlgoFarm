@@ -1,0 +1,31 @@
+/* settings.module.css */
+.container {
+  padding: 24px;
+  max-width: 768px;
+  margin: 0 auto;
+  overflow: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.groupName {
+  margin-bottom: 24px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toggleSection, .logoutSection, .leaveSection, .withdrawSection {
+  margin-bottom: 24px;
+}
+
+.sectionTitle {
+  font-weight: bold;
+}

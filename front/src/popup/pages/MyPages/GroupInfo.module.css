@@ -1,0 +1,27 @@
+.container {
+  padding: 24px;
+  background-color: white;
+  overflow: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.loadingContainer, .noMembersContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+}
+
+.title {
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  margin-bottom: 24px;
+}
